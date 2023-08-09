@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+  background-color: #121212; /* Set your desired background color here */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  -webkit-scrollbar-width: thin;
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: relative; /* Ensure fixed space even when scrollbar is not visible */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px; /* Adjust the scrollbar width as per your preference */
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #1f2937;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: #111827;
+}
+
+/* Add custom styles for the playlist container when hovered */
+.playlist-container:hover .custom-scrollbar {
+  overflow-x: auto;
+}
+
+/* Add custom styles for the playlist container when scrollbar is present */
+.playlist-container .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+}
