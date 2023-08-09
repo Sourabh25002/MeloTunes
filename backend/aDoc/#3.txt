@@ -1,0 +1,9 @@
+CREATING USER MODEL
+
+>These are basically part of backend and specifically part of database.
+>Building model means how user data is strucured and what it consist.
+
+>Now we will connect aur local server to mongodb using mongoose.
+>We will install mongoose using "npm i mongoose"
+
+>We made User.js file in modules folder where we created initial schema for the user data
