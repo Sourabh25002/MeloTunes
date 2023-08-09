@@ -1,3 +1,0 @@
-"CREATING SONG AND PLAYLIST MODELS"
-
->Here we created models of Song.js and Playlist.js
