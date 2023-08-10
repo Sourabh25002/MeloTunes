@@ -73,6 +73,6 @@ app.use("/song", songRoutes);
 app.use("/playlist", playlistRoutes);
 
 // Now we want to tell express tht our server will run on localhost:8080
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
